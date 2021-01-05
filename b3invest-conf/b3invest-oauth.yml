@@ -1,0 +1,7 @@
+oauth:
+  client:
+    name: clientname
+    secret: clientsecret
+jwt:
+  header: Authorization
+  secret: MY-SECRET-KEY
