@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: b3invest-configserver
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/rafacancian/b3invest
+          username: ${GITHUB_USER}
+          password: ${GITHUB_PASS}
+
+server:
+  port: 8888
