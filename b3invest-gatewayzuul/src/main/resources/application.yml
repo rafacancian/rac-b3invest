@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: b3invest-gatewayzuul
+
+server:
+  port: 8765
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+ribbon:
+  ConnectTimeout: 50000
+  ReadTimeout: 80000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000000
+
+zuul:
+  routers:
+    b3invest-manager:
+      service-id: b3invest-manager
+      path: /b3invest-manager/**
+    b3invest-broker:
+      service-id: b3invest-broker
+      path: /b3invest-broker/**
+    b3invest-user:
+      service-id: b3invest-user
+      path: /b3invest-user/**
+    b3invest-oauth:
+      service-id: b3invest-oauth
+      path: /b3invest-oauth/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
