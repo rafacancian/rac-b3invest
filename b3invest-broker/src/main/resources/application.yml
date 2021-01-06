@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: b3invest-broker
+
+server:
+  port: ${PORT:0}
+#  port: 8002
+#  servlet:
+#    context-path: /broker
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# Use to fixed server address
+#b3invest-manager:
+#  ribbon:
+#    eureka:
+#      enabled: false
+#    listOfServers: localhost:8001,localhost:8011
+#    ServerListRefreshInterval: 15000
+
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 20000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
