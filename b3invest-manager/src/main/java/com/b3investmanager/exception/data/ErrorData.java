@@ -16,10 +16,8 @@ public class ErrorData implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String message;
-//    private ErrorCode code;
 
     public ErrorData(final ErrorData errorData) {
         this.message = errorData.message;
-        // this.code = errorData.code;
     }
 }

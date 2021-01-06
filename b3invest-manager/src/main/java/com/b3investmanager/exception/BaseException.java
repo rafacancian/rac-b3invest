@@ -20,44 +20,14 @@ public class BaseException extends RuntimeException {
         super();
     }
 
-/*    public BaseException(final Set<ErrorData> errors) {
-        this.errors = errors;
-    }*/
-
-   /* public BaseException(final ErrorData... errors) {
-        this.errors = Arrays.stream(errors).collect(Collectors.toSet());
-    }*/
-
     public BaseException(final String message) {
         super(message);
     }
 
-   /* public BaseException(final String message, final Set<ErrorData> errors) {
-        super(message);
-        this.errors = errors;
-    }*/
 
     public BaseException(final String message, final Throwable cause) {
         super(message, cause);
     }
-
-   /* public BaseException(final String message, final Throwable cause, final Set<ErrorData> errors) {
-        super(message, cause);
-        this.errors = errors;
-    }*/
-
-    /*public BaseException(final Throwable cause) {
-        super(cause);
-    }*/
-
-    /*public BaseException(final Throwable cause, final Set<ErrorData> errors) {
-        super(cause);
-        this.errors = errors;
-    }*/
-
-   /* public BaseException(final String tag, final Throwable cause, final String[] args) {
-        super(getMessage(tag, args), cause);
-    }*/
 
     private static String getMessage(final String tag, final String[] args) {
         final ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();

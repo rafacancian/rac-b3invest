@@ -13,8 +13,6 @@ import java.util.Set;
 @Data
 @Builder
 @NoArgsConstructor
-//@AllArgsConstructor
-//@RequiredArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class MetaData<T> implements Serializable {
 
