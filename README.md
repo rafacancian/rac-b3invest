@@ -1,4 +1,4 @@
-# b3invest
+# B3Invest
 
 Project create to interact between microservices using the technologies
 - Spring boot
