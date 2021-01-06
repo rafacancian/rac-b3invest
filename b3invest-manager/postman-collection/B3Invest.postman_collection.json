@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "93421b51-9600-4de5-bbc4-7847d886522d",
+		"name": "B3Invest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Manager",
+			"item": [
+				{
+					"name": "TicketByName",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDg1ODU0OTUsInVzZXJfbmFtZSI6ImNhbmNpYW4uYWRtaW5AZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9PUEVSQVRPUiIsIlJPTEVfQURNSU4iXSwianRpIjoiYTliNmY2Y2MtMjJhYi00ZGVlLWI5MWQtYmFmMTkyMjU4NDQ2IiwiY2xpZW50X2lkIjoiY2xpZW50bmFtZSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.l9BRTgNuAGkdTAP2Wrih8R2IBlOfszam4QxRCgPZFWI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket/PETR4",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"b3invest",
+								"ticket",
+								"PETR4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TicketFindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"b3invest",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TicketCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VVAR3\",\r\n    \"description\": \"Via Varejo\",\r\n    \"value\": 17.34 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"b3invest",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TicketUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VVAR3\",\r\n    \"description\": \"Via Varejo update\",\r\n    \"value\": 17.33 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"b3invest",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TicketDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket/WEGE3",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"b3invest",
+								"ticket",
+								"WEGE3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Broker",
+			"item": [
+				{
+					"name": "TicketByName",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDg1ODM4MjAsInVzZXJfbmFtZSI6ImNhbmNpYW4uYWRtaW5AZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9PUEVSQVRPUiIsIlJPTEVfQURNSU4iXSwianRpIjoiNjdjMTU0NWYtM2M1Yy00ZDZkLWE5ZTEtNmZlM2I2NGQ5YWNiIiwiY2xpZW50X2lkIjoiY2xpZW50bmFtZSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.xDtl7Pqb-aGMAU4vVY_Cml1wW2aXOHnEmQm9vVddyjE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-broker/b3invest/ticket/PETR4",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-broker",
+								"b3invest",
+								"ticket",
+								"PETR4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TicketFindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-broker/b3invest/ticket",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-broker",
+								"b3invest",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-broker/b3invest/ticket/config",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-broker",
+								"b3invest",
+								"ticket",
+								"config"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "TicketById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-user/b3invest/1",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-user",
+								"b3invest",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindByEmail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "clientname",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "clientsecret",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "cancian.admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-oauth/oauth/token",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-oauth",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-broker/b3invest/ticket/config",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-broker",
+								"b3invest",
+								"ticket",
+								"config"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6ed20a70-766b-4d74-8c09-cda376bab104",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8e932bdc-74e6-4163-a398-b76e080afcca",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Oauth",
+			"item": [
+				{
+					"name": "FindByEmail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "clientname",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "clientsecret",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "cancian.admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API-GATEWAY}}/b3invest-oauth/users/search?email=cancian.admin@gmail.com",
+							"host": [
+								"{{API-GATEWAY}}"
+							],
+							"path": [
+								"b3invest-oauth",
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "cancian.admin@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getToken",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "clientname",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "clientsecret",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "cancian.admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:60630/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "60630",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f4afafa7-eb52-453e-a7c7-977abea66616",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c8889aa2-4d23-47f1-85fa-94a18230af52",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ConfigServer",
+			"item": [
+				{
+					"name": "manager-default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-CONFIG-HOST}}/b3invest-manager/default",
+							"host": [
+								"{{API-CONFIG-HOST}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manager-test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-CONFIG-HOST}}/b3invest-manager/test",
+							"host": [
+								"{{API-CONFIG-HOST}}"
+							],
+							"path": [
+								"b3invest-manager",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "broker-default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-CONFIG-HOST}}/b3invest-broker/default",
+							"host": [
+								"{{API-CONFIG-HOST}}"
+							],
+							"path": [
+								"b3invest-broker",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "broker-test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API-CONFIG-HOST}}/b3invest-broker/test",
+							"host": [
+								"{{API-CONFIG-HOST}}"
+							],
+							"path": [
+								"b3invest-broker",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
