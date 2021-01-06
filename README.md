@@ -36,25 +36,33 @@ STEPS
 - Architecture
 - Postman collection 
 
+------------------------------------------
 TODO
+
 - Update helper architecture
+
 - update readme
+
 - Fix gateway communication with oauth to generate JWT Token
+
 - B3Invest-Manager
   - Swagger
   - Hateoas
   - Pagination
   - Redis
   - Swagger
+  
 - B3Invest-Broker
   - Swagger
   - Hateoas
   - Pagination
   - Redis
   - Swagger 
+  
 - B3Invest-User
   - Swagger
   - Unit Tests
+  
 - Docker Projects
 
 
