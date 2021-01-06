@@ -14,19 +14,12 @@ import spock.lang.Unroll
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
 
-//@SpringBootTest
 @WebMvcTest(value = TicketController.class)
-//@RunWith(SpringRunner.class)
-//@AutoConfigureMockMvc
-//@WebMvcTest
-//@ExtendWith(SpringExtension.class)
-//@ContextConfiguration
-//@RunWith(SpringRunner.class)
 class TicketControllerSpec extends Specification {
 
-    private static final String URL_VALID = "/b3invest/ticket"
-    private static final String URL_VALID_VARIABLE = "/b3invest/ticket/PETR4"
-    private static final String URL_INVALID = "/b3/b3invest/ticket"
+    private static final String URL_VALID = "/ticket"
+    private static final String URL_VALID_VARIABLE = "/ticket/PETR4"
+    private static final String URL_INVALID = "/b3invest/ticket"
 
     @Autowired
     MockMvc mvc
