@@ -17,7 +17,7 @@ Project create to interact between microservices using the technologies
 - Eureka: Cloud server
 - Docker: Imagens to run projects with dockerFiles
 
-Steps
+STEPS
 
 1 - Run Config Server 
 - project is responsible for to get confidential configurations on github
@@ -35,6 +35,28 @@ Steps
 5 - The Helper file - contains informations about
 - Architecture
 - Postman collection 
+
+TODO
+- Update helper architecture
+- update readme
+- Fix gateway communication with oauth to generate JWT Token
+- B3Invest-Manager
+  - Swagger
+  - Hateoas
+  - Pagination
+  - Redis
+  - Swagger
+- B3Invest-Broker
+  - Swagger
+  - Hateoas
+  - Pagination
+  - Redis
+  - Swagger 
+- B3Invest-User
+  - Swagger
+  - Unit Tests
+- Docker Projects
+
 
 
 
