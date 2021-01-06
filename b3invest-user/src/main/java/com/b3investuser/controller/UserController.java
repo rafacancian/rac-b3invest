@@ -2,16 +2,18 @@ package com.b3investuser.controller;
 
 import com.b3investuser.entity.User;
 import com.b3investuser.repositories.UserRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
+@AllArgsConstructor
 public class UserController {
 
     @Autowired
-    private UserRepository repository;
+    private final UserRepository repository;
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<User> findById(@PathVariable final Long id) {
