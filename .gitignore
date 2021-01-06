@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+#ignore idea
+*.idea
+
 # Log file
 *.log
 
