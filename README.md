@@ -57,6 +57,7 @@ Default port: 8765
 - [Postman collection][postman-file]
 
 ### Simple Architecture Design
+![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.PNG)
 
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/credentials.PNG)
 
