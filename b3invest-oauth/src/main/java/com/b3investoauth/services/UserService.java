@@ -22,23 +22,10 @@ public class UserService implements UserDetailsService {
     @Autowired
     private final UserFeignClient userFeignClient;
 
-    //Used just to test
-    public User findByEmail(final String email) {
-        log.info("UserService findByEmail: {}", email);
-
-        final User user = userFeignClient.findByEmail(email).getBody();
-        if (user == null) {
-            logger.error("Email not found: " + email);
-            throw new IllegalArgumentException("Email not found");
-        }
-        logger.info("Email found: " + email);
-        return user;
-    }
-
     @Override
     public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {
         log.info("UserService loadUserByUsername: {}", username);
-        final User user = userFeignClient.findByEmail(username).getBody();
+        final User user = userFeignClient.loadUserByUsername(username).getBody();
         if (user == null) {
             logger.error("Email not found: " + username);
             throw new UsernameNotFoundException("Email not found");

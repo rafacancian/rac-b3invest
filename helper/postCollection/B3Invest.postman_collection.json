@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "93421b51-9600-4de5-bbc4-7847d886522d",
+		"_postman_id": "11d58c45-66cf-475f-8bad-d11d2555afbf",
 		"name": "B3Invest",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -53,13 +53,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket",
+							"raw": "{{API-GATEWAY}}/b3invest-manager/ticket",
 							"host": [
 								"{{API-GATEWAY}}"
 							],
 							"path": [
 								"b3invest-manager",
-								"b3invest",
 								"ticket"
 							]
 						}
@@ -91,13 +90,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket",
+							"raw": "{{API-GATEWAY}}/b3invest-manager/ticket",
 							"host": [
 								"{{API-GATEWAY}}"
 							],
 							"path": [
 								"b3invest-manager",
-								"b3invest",
 								"ticket"
 							]
 						}
@@ -129,13 +127,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket",
+							"raw": "{{API-GATEWAY}}/b3invest-manager/ticket",
 							"host": [
 								"{{API-GATEWAY}}"
 							],
 							"path": [
 								"b3invest-manager",
-								"b3invest",
 								"ticket"
 							]
 						}
@@ -167,13 +164,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-manager/b3invest/ticket/WEGE3",
+							"raw": "{{API-GATEWAY}}/b3invest-manager/ticket/WEGE3",
 							"host": [
 								"{{API-GATEWAY}}"
 							],
 							"path": [
 								"b3invest-manager",
-								"b3invest",
 								"ticket",
 								"WEGE3"
 							]
@@ -239,35 +235,6 @@
 							"path": [
 								"b3invest-broker",
 								"ticket"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Config",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-broker/ticket/config",
-							"host": [
-								"{{API-GATEWAY}}"
-							],
-							"path": [
-								"b3invest-broker",
-								"ticket",
-								"config"
 							]
 						}
 					},
@@ -348,7 +315,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "6ed20a70-766b-4d74-8c09-cda376bab104",
+						"id": "52208f4c-92c7-4fc7-bc02-4ea0c1ace8a3",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -358,7 +325,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "8e932bdc-74e6-4163-a398-b76e080afcca",
+						"id": "42d08ce1-c491-4d9e-80ec-9ba7ab1be3b7",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -372,132 +339,12 @@
 			"name": "Oauth",
 			"item": [
 				{
-					"name": "FindByEmail",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": []
-						},
-						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-oauth/users/search?email=cancian.operator@gmail.com",
-							"host": [
-								"{{API-GATEWAY}}"
-							],
-							"path": [
-								"b3invest-oauth",
-								"users",
-								"search"
-							],
-							"query": [
-								{
-									"key": "email",
-									"value": "cancian.operator@gmail.com"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Test",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": []
-						},
-						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-oauth/users/test",
-							"host": [
-								"{{API-GATEWAY}}"
-							],
-							"path": [
-								"b3invest-oauth",
-								"users",
-								"test"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "FindByEmail Copy",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": []
-						},
-						"url": {
-							"raw": "{{API-GATEWAY}}/b3invest-oauth/users/search?email=cancian.operator@gmail.com",
-							"host": [
-								"{{API-GATEWAY}}"
-							],
-							"path": [
-								"b3invest-oauth",
-								"users",
-								"search"
-							],
-							"query": [
-								{
-									"key": "email",
-									"value": "cancian.operator@gmail.com"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "getToken",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "049873c5-44d0-4956-bd97-1039a84b04ea",
+								"id": "7dfb1b7e-b9d3-4e90-ae7c-c63d23ca4a19",
 								"exec": [
 									"//if(pm.responseCode >= 200 && pm.responseCode <= 300){\r",
 									"   var json = pm.response.json();\r",
@@ -560,83 +407,13 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "getToken IP",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "e1ea58e1-0999-46a5-a92c-b48ea67e69c0",
-								"exec": [
-									"//if(pm.responseCode >= 200 && pm.responseCode <= 300){\r",
-									"   var json = pm.response.json();\r",
-									"   pm.environment.set(\"TOKEN\", json.access_token);\r",
-									"//}\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "{{CLIENT-SECRET}}",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "{{CLIENT-NAME}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "username",
-									"value": "{{USERNAME}}",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "{{PASSWORD}}",
-									"type": "text"
-								},
-								{
-									"key": "grant_type",
-									"value": "password",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:51994/oauth/token",
-							"host": [
-								"localhost"
-							],
-							"port": "51994",
-							"path": [
-								"oauth",
-								"token"
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "f4afafa7-eb52-453e-a7c7-977abea66616",
+						"id": "c28af451-ac2a-47ab-8469-9edbfc646ea3",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -646,7 +423,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c8889aa2-4d23-47f1-85fa-94a18230af52",
+						"id": "ef73dc45-3651-4316-8377-3e5b297a1e87",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -659,62 +436,6 @@
 		{
 			"name": "ConfigServer",
 			"item": [
-				{
-					"name": "broker-default",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{API-CONFIG-HOST}}/b3invest-broker/default",
-							"host": [
-								"{{API-CONFIG-HOST}}"
-							],
-							"path": [
-								"b3invest-broker",
-								"default"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "broker-test",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{TOKEN}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{API-CONFIG-HOST}}/b3invest-broker/test",
-							"host": [
-								"{{API-CONFIG-HOST}}"
-							],
-							"path": [
-								"b3invest-broker",
-								"test"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "properties",
 					"request": {

@@ -31,7 +31,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     private static final String[] OPERATOR = {"/b3invest-broker/**"};
 
-    private static final String[] ADMIN = {"/b3invest-manager/**", "/b3invest-user/**", "/actuator/**", "/b3invest-manager/actuator/**", "/b3invest-oauth/actuator/**"};
+    private static final String[] ADMIN = {"/b3invest-manager/**", "/b3invest-user/**", "/b3invest-oauth/users/**", "/actuator/**", "/b3invest-manager/actuator/**"};
 
     @Override
     public void configure(final ResourceServerSecurityConfigurer resources) throws Exception {
@@ -44,13 +44,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
         http.authorizeRequests()
                 .antMatchers(PUBLIC).permitAll()
-                .antMatchers(HttpMethod.OPTIONS, "/oauth/token").permitAll()
-                .antMatchers("/b3invest-oauth/**").permitAll()
-                .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .antMatchers(HttpMethod.GET, OPERATOR).hasAnyRole("OPERATOR", "ADMIN")
                 .antMatchers(ADMIN).hasRole("ADMIN")
                 .anyRequest().authenticated();
-
 
         http.cors().configurationSource(corsConfigurationSource());
     }

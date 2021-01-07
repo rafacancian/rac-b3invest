@@ -38,4 +38,4 @@ zuul:
     b3invest-oauth:
       service-id: b3invest-oauth
       path: /b3invest-oauth/**
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+  sensitive-headers: Cookie,Set-Cookie
