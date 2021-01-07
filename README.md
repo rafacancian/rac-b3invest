@@ -56,10 +56,7 @@ Default port: 8765
 ## Architecture Design
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
 
-Authentication flow
-![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/auth2.PNG)
-
-![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/credentials.PNG)
+![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architectureLayout.png)
 
 ---
 ## DockerFiles
