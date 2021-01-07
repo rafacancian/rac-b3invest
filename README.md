@@ -1,70 +1,107 @@
+<p align="center">
+  <a href="https://github.com/rafacancian/b3invest">
+    <img width="400px" src="https://i.ibb.co/tDGvWFF/b3invest.png" alt="B3Invest Logo">
+  </a>
+</p>
+
 # B3Invest
 
-Project create to interact between microservices using the technologies
-- Spring boot
-- Spring cloud with 
-    - Feign: for external server communications
-    - Netflix:
-    - Zuul:
-    - Ribbon: load balance
-    - Hystrix: fault tolerance e timeout
-- JUnit: Tests
-- Spock: Tests
-- Lambok: Annotations helper
-- Oauth 2 and JWT: Authentication system
-- H2: database for tests
-- Redis: cache 
-- Eureka: Cloud server
-- Docker: Imagens to run projects with dockerFiles
+> This project was developed for apply concepts and experiences using > the microservice architecture.
+> Based on simplified investment business rules of B3 (Brazilian Investment exchange)
 
-STEPS
+## I made use of the following technologies and libraries:
 
-1 - Run Config Server 
-- project is responsible for to get confidential configurations on github
- 
-2 - Run Eureka Server
-- Project responsible for centralize the communication with 
-- Default port 8761
+- [Spring Boot]
+- [Spring Cloud] with
+  - [Feign]: for external server communications
+  - [Netflix Zuul]
+  - [Netflix Ribbon]: Client-side IPC library
+  - [Eureka]: Cloud server and service discovery
+  - [Hystrix]: fault tolerance e timeout
+- [JUnit]: For Unit Test
+- [Spock Framework]: A wonderful Groovy framework for Behaviour Driven Development-BDD test
+- [Project Lombok]: Annotations helper library
+- Oauth 2 and JWT: Authentication bearer token system
+- [H2]: A very fast database embedded for tests
+- [Redis]: A open source in-memory data structure store used as a database and cache
+- [Docker]: The most famous container engine used to execute the B3Invest project with their external dependencies
 
-3 - Run gateway Zuul
-- Project responsible for
-- Default port: 8765
+---
 
-4 - Run others projects 
+## Steps to run
 
-5 - The Helper file - contains informations about
-- Architecture
-- Postman collection 
+### 1. Run Config Server
 
-------------------------------------------
-TODO
+> Project is responsible for to get confidential configurations on Github
 
-- Update helper architecture
+### 2. Run Eureka Server
 
-- update readme
+> Project responsible for centralize the communication with
 
-- Fix gateway communication with oauth to generate JWT Token
+```
+Default Port: 8761
+```
 
-- B3Invest-Manager
-  - Swagger
-  - Hateoas
-  - Pagination
-  - Redis
-  - Swagger
-  
-- B3Invest-Broker
-  - Swagger
-  - Hateoas
-  - Pagination
-  - Redis
-  - Swagger 
-  
-- B3Invest-User
-  - Swagger
-  - Unit Tests
-  
-- Docker Projects
+### 3. Run gateway Zuul
 
+> Project responsible for
 
+```
+Default port: 8765
+```
 
+### 4. Run others projects
 
+### 5. The Postman Collection file
+
+- [Postman collection][postman-file]
+
+### Simple Architecture Design
+
+![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/credentials.PNG)
+
+![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/auth2.PNG)
+
+![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/b3invest-user-diagram.PNG)
+
+---
+
+## TODO
+
+- :heavy_check_mark: Update helper architecture
+
+- :heavy_check_mark: Update README repo file
+
+- :white_check_mark: Fix gateway communication with oauth to generate JWT Token
+
+- :white_check_mark: B3Invest-Manager
+  - :white_check_mark: Swagger
+  - :white_check_mark: Hateoas
+  - :white_check_mark: Pagination
+  - :white_check_mark: Redis
+  - :white_check_mark: Swagger
+- :white_check_mark: B3Invest-Broker
+  - :white_check_mark: Swagger
+  - :white_check_mark: Hateoas
+  - :white_check_mark: Pagination
+  - :white_check_mark: Redis
+  - :white_check_mark: Swagger
+- :white_check_mark: B3Invest-User
+  - :white_check_mark: Swagger
+  - :white_check_mark: Unit Tests
+- :white_check_mark: Docker Projects
+
+[spring boot]: https://spring.io/projects/spring-boot
+[spring cloud]: https://spring.io/projects/spring-cloud
+[feign]: https://github.com/OpenFeign/feign
+[netflix zuul]: https://github.com/Netflix/zuul/wiki
+[netflix ribbon]: https://github.com/Netflix/ribbon
+[hystrix]: https://github.com/Netflix/Hystrix
+[junit]: https://junit.org/junit5/
+[spock framework]: https://github.com/spockframework
+[project lombok]: https://github.com/rzwitserloot/lombok
+[h2]: http://h2database.com/html/main.html
+[redis]: https://redis.io/
+[eureka]: https://github.com/Netflix/eureka
+[docker]: https://www.docker.com/
+[postman-file]: https://github.com/rafacancian/b3invest/tree/main/helper/postCollection
