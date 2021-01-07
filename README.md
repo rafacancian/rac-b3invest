@@ -8,16 +8,17 @@
 > Based on simplified investment business rules of B3 (Brazilian Investment exchange)
 
 - [Spring Boot]
-- [Spring Cloud] with
+- [Spring Cloud] providing both authentication and authorization 
   - [Feign]: for external server communications
-  - [Netflix Zuul]
+  - [Netflix Zuul]:  Intelligent Routing
   - [Netflix Ribbon]: Client-side IPC library
   - [Eureka]: Cloud server and service discovery
   - [Hystrix]: fault tolerance e timeout
-- [JUnit]: For Unit Test
+- [Spring Security]: providing authentication and authorization security
+  - [Oauth2]: oauth2 authentication bearer JWT token system 
+- [JUnit]: Unit Test
 - [Spock Framework]: A wonderful Groovy framework for Behaviour Driven Development-BDD test
 - [Project Lombok]: Annotations helper library
-- Oauth 2 and JWT: Authentication bearer token system
 - [H2]: A very fast database embedded for tests
 - [Redis]: A open source in-memory data structure store used as a database and cache
 - [Docker]: The most famous container engine used to execute the B3Invest project with their external dependencies
@@ -52,7 +53,7 @@ Default port: 8765
 
 - [Postman collection][postman-file]
 
-### Architecture Design
+## Architecture Design
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
 
 Authentication flow
@@ -66,7 +67,6 @@ Authentication flow
 ### 1. Create network
 ```
 docker network create b3invest-network
-docker logs -f <container-id>
 ```
 
 ### 2. Config Server
@@ -125,13 +125,15 @@ docker run -p <external-port>:<internal-port> --name <container-name> --network 
 
 [spring boot]: https://spring.io/projects/spring-boot
 [spring cloud]: https://spring.io/projects/spring-cloud
+[spring security] : https://spring.io/projects/spring-security 
+[oauth]: https://spring.io/projects/spring-security-oauth
 [feign]: https://github.com/OpenFeign/feign
 [netflix zuul]: https://github.com/Netflix/zuul/wiki
 [netflix ribbon]: https://github.com/Netflix/ribbon
 [hystrix]: https://github.com/Netflix/Hystrix
 [junit]: https://junit.org/junit5/
-[spock framework]: https://github.com/spockframework
-[project lombok]: https://github.com/rzwitserloot/lombok
+[spock]: https://github.com/spockframework
+[lombok]: https://github.com/rzwitserloot/lombok
 [h2]: http://h2database.com/html/main.html
 [redis]: https://redis.io/
 [eureka]: https://github.com/Netflix/eureka
