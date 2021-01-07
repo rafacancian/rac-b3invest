@@ -1,7 +1,6 @@
 <p align="center">
   <a href="https://github.com/rafacancian/b3invest">
-    <img width="400px" src="https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/layouts/b3invest-logo.png")
-" alt="B3Invest Logo">
+    <img width="400px" src="https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/layouts/b3invest-logo.png" alt="B3Invest Logo">
   </a>
 </p>
 
@@ -60,6 +59,42 @@ Authentication flow
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/auth2.PNG)
 
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/credentials.PNG)
+
+---
+## DockerFiles
+
+### 1. Create network
+```
+docker network create b3invest-network
+docker logs -f <container-id>
+```
+
+### 2. Config Server
+```
+mvnw clean package -DskipTests
+docker build -t b3invest-configserver:v1 .
+docker run -p 8888:8888 --name b3invest-configserver --network b3invest-network -e GITHUB_USER=rafacancian -e GITHUB_PASS=? b3invest-configserver:v1
+```
+
+### 3. Eureka Server
+```
+mvnw clean package -DskipTests
+docker build -t b3invest-eurekaserver:v1 .
+docker run -p 8761:8761 --name b3invest-eurekaserver --network b3invest-network b3invest-eurekaserver:v1
+```
+
+### 4. Gateway Zuul
+```
+mvnw clean package -DskipTests
+docker build -t b3invest-gatewayzuul:v1 .
+docker run -p 8765:8765 --name b3invest-gatewayzuul --network b3invest-network b3invest-gatewayzuul:v1
+```
+
+### Utils commands
+```
+docker logs -f <container-id>
+docker run -p <external-port>:<internal-port> --name <container-name> --network <network-name> <image-name:tag>
+```
 
 ---
 
