@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://github.com/rafacancian/b3invest">
-    <img width="400px" src="https://i.ibb.co/tDGvWFF/b3invest.png" alt="B3Invest Logo">
+    <img width="400px" src="https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
+" alt="B3Invest Logo">
   </a>
 </p>
 
