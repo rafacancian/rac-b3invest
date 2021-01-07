@@ -8,17 +8,17 @@
 > Based on simplified investment business rules of B3 (Brazilian Investment exchange)
 
 - [Spring Boot]
-- [Spring Cloud] providing both authentication and authorization 
+- [Spring Cloud]: providing both authentication and authorization 
   - [Feign]: for external server communications
   - [Netflix Zuul]:  Intelligent Routing
   - [Netflix Ribbon]: Client-side IPC library
   - [Eureka]: Cloud server and service discovery
   - [Hystrix]: fault tolerance e timeout
 - [Spring Security]: providing authentication and authorization security
-  - [Oauth2]: oauth2 authentication bearer JWT token system 
+  - [oauth2]: oauth2 authentication bearer JWT token system 
 - [JUnit]: Unit Test
-- [Spock Framework]: A wonderful Groovy framework for Behaviour Driven Development-BDD test
-- [Project Lombok]: Annotations helper library
+- [Spock]: A wonderful Groovy framework for Behaviour Driven Development-BDD test
+- [Lombok]: Annotations helper library
 - [H2]: A very fast database embedded for tests
 - [Redis]: A open source in-memory data structure store used as a database and cache
 - [Docker]: The most famous container engine used to execute the B3Invest project with their external dependencies
@@ -125,8 +125,8 @@ docker run -p <external-port>:<internal-port> --name <container-name> --network 
 
 [spring boot]: https://spring.io/projects/spring-boot
 [spring cloud]: https://spring.io/projects/spring-cloud
-[spring security] : https://spring.io/projects/spring-security 
-[oauth]: https://spring.io/projects/spring-security-oauth
+[spring security]: https://spring.io/projects/spring-security 
+[oauth2]: https://spring.io/projects/spring-security-oauth
 [feign]: https://github.com/OpenFeign/feign
 [netflix zuul]: https://github.com/Netflix/zuul/wiki
 [netflix ribbon]: https://github.com/Netflix/ribbon
