@@ -1,16 +1,12 @@
 <p align="center">
   <a href="https://github.com/rafacancian/b3invest">
-    <img width="400px" src="https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
+    <img width="400px" src="https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/layouts/b3invest-logo.png")
 " alt="B3Invest Logo">
   </a>
 </p>
 
-# B3Invest
-
 > This project was developed for apply concepts and experiences using > the microservice architecture.
 > Based on simplified investment business rules of B3 (Brazilian Investment exchange)
-
-## I made use of the following technologies and libraries:
 
 - [Spring Boot]
 - [Spring Cloud] with
