@@ -79,12 +79,17 @@
 
 ---
 
-### Redis
+## Redis
 Docker image available on docker-compose file
 ```
  Coomand: docker-compose up -d
 ```
 
+## Swagger
+- The generated swagger html page is available in the following address
+```
+    http://localhost:8080/swagger-ui/index.html
+```
 ## DockerFiles
 
 ### 1. Create network

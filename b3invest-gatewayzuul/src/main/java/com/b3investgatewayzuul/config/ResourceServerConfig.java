@@ -33,6 +33,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     private static final String[] ADMIN = {"/b3invest-manager/**", "/b3invest-user/**", "/b3invest-oauth/users/**", "/actuator/**", "/b3invest-manager/actuator/**"};
 
+    private static final String[] AUTH_WHITELIST = {"/b3invest-manager/swagger-ui/**", "/b3invest-manager/swagger-resources/**", "/b3invest-manager/swagger-ui.html", "/b3invest-manager/v2/api-docs", "/b3invest-manager/webjars/**"};
+
     @Override
     public void configure(final ResourceServerSecurityConfigurer resources) throws Exception {
         log.info("ResourceServerConfig configure: {}", resources);
@@ -44,6 +46,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
         http.authorizeRequests()
                 .antMatchers(PUBLIC).permitAll()
+                .antMatchers(AUTH_WHITELIST).permitAll()
                 .antMatchers(HttpMethod.GET, OPERATOR).hasAnyRole("OPERATOR", "ADMIN")
                 .antMatchers(ADMIN).hasRole("ADMIN")
                 .anyRequest().authenticated();
