@@ -28,7 +28,9 @@
 >>Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
 >
 
-**System Technologies**
+---
+
+## System Technologies
 
 - [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run"
 - [Spring Cloud]: providing both authentication and authorization 
