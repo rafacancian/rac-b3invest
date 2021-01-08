@@ -74,12 +74,18 @@ Default port: 8765
 
 ### 4. Run others projects
 
-### 5. The Postman Collection file
+---
+
+## 5. The Postman Collection file
 
 - [Postman collection][postman-file]
 
+---
+
 ## Architecture Design
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
+
+---
 
 ## Security Authentication Flow
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/authenticationFlow.png)
@@ -141,6 +147,8 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
   "credentials": "omit"
 });
 ```
+
+---
 
 ## TODO
 
