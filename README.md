@@ -4,10 +4,31 @@
   </a>
 </p>
 
-> This project was developed for apply concepts and experiences using > the microservice architecture.
-> Based on simplified investment business rules of B3 (Brazilian Investment exchange)
+>Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)
+> 
+>B3Invest Config Server
+>Module responsible to centralize the configuration access (this configurations are free because the project is used just to study)  
+>
+>B3Invest Eureka Server
+>Module responsible to cloud server and service discover 
+>
+>B3Invest Gateway Zuul
+>Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
+> 
+>B3Invest Broker
+>Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
+>
+>B3Invest Manager
+>Module that simulate the B3 Project, when the tickets are registers and controllers by the Brazilian investments
+>
+>B3Invest User
+>Module responsible from the user registers
+>
+>B3Invest Oauth
+>Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
+>
 
-- [Spring Boot]
+- [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run"
 - [Spring Cloud]: providing both authentication and authorization 
   - [Feign]: for external server communications
   - [Netflix Zuul]:  Intelligent Routing
