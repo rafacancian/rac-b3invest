@@ -10,10 +10,16 @@
 >>Module responsible to centralize the configuration access (this configurations are free because the project is used just to study)  
 >
 >**B3Invest Eureka Server** 
->>Module responsible to cloud server and service discover 
+>>Module responsible to cloud server and service discover
+>>```
+>>  Default Port: 8761
+>>  ``` 
 >
 >**B3Invest Gateway Zuul**
 >>Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
+>> ```
+>>  Default port: 8765
+>>  ```
 > 
 >**B3Invest Broker**
 >>Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
@@ -50,38 +56,6 @@
 
 ---
 
-## Steps to run
-
-### 1. Run Config Server
-
-> Project is responsible for to get confidential configurations on Github
-
-### 2. Run Eureka Server
-
-> Project responsible for centralize the communication with
-
-```
-Default Port: 8761
-```
-
-### 3. Run gateway Zuul
-
-> Project responsible for
-
-```
-Default port: 8765
-```
-
-### 4. Run others projects
-
----
-
-## 5. The Postman Collection file
-
-- [Postman collection][postman-file]
-
----
-
 ## Architecture Design
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
 
@@ -91,6 +65,20 @@ Default port: 8765
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/authenticationFlow.png)
 
 ---
+
+## Steps to run
+1. Run Config Server
+2. Run Eureka Server
+3. Run gateway Zuul
+4. Run others projects
+
+---
+
+## Postman Collection
+- [Postman collection][postman-file]
+
+---
+
 ## DockerFiles
 
 ### 1. Create network
