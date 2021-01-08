@@ -5,6 +5,7 @@ import com.b3investmanager.exception.GatewayException;
 import com.b3investmanager.external.repository.TicketRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -35,6 +36,7 @@ public class TicketGatewayImpl implements TicketGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "Tickets", key = "(#root.method.name)")
     public Optional<Ticket> findByName(final String name) {
         try {
             log.debug("TicketGatewayImpl find ticket by name");
@@ -46,6 +48,7 @@ public class TicketGatewayImpl implements TicketGateway {
     }
 
     @Override
+    @Cacheable(cacheNames = "Tickets", key = "(#root.method.name)")
     public List<Ticket> findAll() {
         try {
             log.debug("TicketGatewayImpl find all ticket");

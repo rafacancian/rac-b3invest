@@ -27,7 +27,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Autowired
     private JwtTokenStore tokenStore;
 
-    private static final String[] PUBLIC = {"/b3invest-oauth/oauth/token"};
+    private static final String[] PUBLIC = {"/b3invest-oauth/oauth/token", "/b3invest-manager/h2-console/**"};
 
     private static final String[] OPERATOR = {"/b3invest-broker/**"};
 

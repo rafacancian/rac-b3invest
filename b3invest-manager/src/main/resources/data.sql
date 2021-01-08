@@ -6,7 +6,7 @@ insert into ticket (name, description, value) values ('AMAR3', 'Lojas Marisa', 6
 insert into ticket (name, description, value) values ('ARZZ3', 'Arezzo', 62.92);
 insert into ticket (name, description, value) values ('ITSA4', 'Banco Itau', 12.16);
 insert into ticket (name, description, value) values ('ITUB4', 'Banco Itausa', 32.83);
-insert into ticket (name, description, value) values ('BPAC11', 'Banco BTGP', 90.45);
+--insert into ticket (name, description, value) values ('BPAC11', 'Banco BTGP', 90.45);
 insert into ticket (name, description, value) values ('B3SA3', 'B3 On', 61.72);
 insert into ticket (name, description, value) values ('PETR4', 'Petrobras', 31.00);
 insert into ticket (name, description, value) values ('VALE3', 'Vale', 102.32);
@@ -14,7 +14,7 @@ insert into ticket (name, description, value) values ('AZUL4', 'Azul linhas aere
 insert into ticket (name, description, value) values ('GOLL4', 'Gol linhas aereas', 23.47);
 insert into ticket (name, description, value) values ('EMBR3', 'Embraer', 8.92);
 insert into ticket (name, description, value) values ('CVCB4', 'CVC Turismo', 19.67);
-insert into ticket (name, description, value) values ('TAEE11', 'Taesa', 32.22);
+--insert into ticket (name, description, value) values ('TAEE11', 'Taesa', 32.22);
 insert into ticket (name, description, value) values ('ELET3', 'Eletrobras', 34.04);
 insert into ticket (name, description, value) values ('TOTS3', 'Totvs', 26.25);
 insert into ticket (name, description, value) values ('LINX3', 'Linx', 37.60);

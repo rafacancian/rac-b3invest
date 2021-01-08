@@ -1,0 +1,16 @@
+version: '3.8'
+
+networks:
+  b3invest-network:
+    driver: bridge
+
+services:
+
+  redis:
+    restart: always
+    image: redis
+    container_name: b3invest-redis
+    networks:
+      - b3invest-network
+    ports:
+      - "6379:6379"

@@ -79,6 +79,12 @@
 
 ---
 
+### Redis
+Docker image available on docker-compose file
+```
+ Coomand: docker-compose up -d
+```
+
 ## DockerFiles
 
 ### 1. Create network
