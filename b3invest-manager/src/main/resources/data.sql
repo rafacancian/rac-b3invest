@@ -1,4 +1,34 @@
-INSERT INTO ticket (name, description, value) VALUES ('PETR4', 'Petrobras', 23.10);
-INSERT INTO ticket (name, description, value) VALUES ('MGLU3', 'Magazine Luiza', 24.51);
-INSERT INTO ticket (name, description, value) VALUES ('WEGE3', 'WEG S.A.', 71.32);
-INSERT INTO ticket (name, description, value) VALUES ('ITSA4', 'Banco Itausa', 11.41);
+-- currents values on date 08/01/2021
+insert into ticket (name, description, value) values ('VVAR3', 'Via Varejo', 15.08);
+insert into ticket (name, description, value) values ('MGLU3', 'Magazine Luiza', 23.16);
+insert into ticket (name, description, value) values ('BTOW3', 'B2W Digital On', 67.31);
+insert into ticket (name, description, value) values ('AMAR3', 'Lojas Marisa', 6.11);
+insert into ticket (name, description, value) values ('ARZZ3', 'Arezzo', 62.92);
+insert into ticket (name, description, value) values ('ITSA4', 'Banco Itau', 12.16);
+insert into ticket (name, description, value) values ('ITUB4', 'Banco Itausa', 32.83);
+insert into ticket (name, description, value) values ('BPAC11', 'Banco BTGP', 90.45);
+insert into ticket (name, description, value) values ('B3SA3', 'B3 On', 61.72);
+insert into ticket (name, description, value) values ('PETR4', 'Petrobras', 31.00);
+insert into ticket (name, description, value) values ('VALE3', 'Vale', 102.32);
+insert into ticket (name, description, value) values ('AZUL4', 'Azul linhas aereas', 36.13);
+insert into ticket (name, description, value) values ('GOLL4', 'Gol linhas aereas', 23.47);
+insert into ticket (name, description, value) values ('EMBR3', 'Embraer', 8.92);
+insert into ticket (name, description, value) values ('CVCB4', 'CVC Turismo', 19.67);
+insert into ticket (name, description, value) values ('TAEE11', 'Taesa', 32.22);
+insert into ticket (name, description, value) values ('ELET3', 'Eletrobras', 34.04);
+insert into ticket (name, description, value) values ('TOTS3', 'Totvs', 26.25);
+insert into ticket (name, description, value) values ('LINX3', 'Linx', 37.60);
+insert into ticket (name, description, value) values ('WEGE3', 'WEG S.A', 84.94);
+insert into ticket (name, description, value) values ('IGTA3', 'Iguatemi', 33.57);
+insert into ticket (name, description, value) values ('ALSO3', 'Alians', 26.19);
+insert into ticket (name, description, value) values ('DTEX3', 'Duratex', 19.20);
+insert into ticket (name, description, value) values ('EZTC3', 'Ezetec', 38.53);
+insert into ticket (name, description, value) values ('CIEL3', 'Cielo', 3.74);
+insert into ticket (name, description, value) values ('IOBR4', 'Telefonia OI', 2.94);
+insert into ticket (name, description, value) values ('COGN3', 'Cogna', 4.62);
+insert into ticket (name, description, value) values ('TGMA3', 'Tegma', 27.02);
+insert into ticket (name, description, value) values ('IRBR3', 'IRBR Brasil', 7.75);
+insert into ticket (name, description, value) values ('ABEV3', 'Ambev', 16.05);
+insert into ticket (name, description, value) values ('MILS3', 'Mills', 5.95);
+insert into ticket (name, description, value) values ('NGRD3', 'Neogrid', 7.46);
+
