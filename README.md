@@ -7,7 +7,7 @@
 >**Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
 > 
 >**B3Invest Config Server** 
->>Module responsible to centralize the configuration access (this configurations are free because the project is used just to study)  
+>>Module responsible to centralize the configuration access (this configurations are public because the project is used just to study)  
 >
 >**B3Invest Eureka Server** 
 >>Module responsible to cloud server and service discover
