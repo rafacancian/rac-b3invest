@@ -4,28 +4,28 @@
   </a>
 </p>
 
->Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)
+>**Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
 > 
->B3Invest Config Server
->Module responsible to centralize the configuration access (this configurations are free because the project is used just to study)  
+>**B3Invest Config Server** 
+>>Module responsible to centralize the configuration access (this configurations are free because the project is used just to study)  
 >
->B3Invest Eureka Server
->Module responsible to cloud server and service discover 
+>**B3Invest Eureka Server** 
+>>Module responsible to cloud server and service discover 
 >
->B3Invest Gateway Zuul
->Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
+>**B3Invest Gateway Zuul**
+>>Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
 > 
->B3Invest Broker
->Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
+>**B3Invest Broker**
+>>Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
 >
->B3Invest Manager
->Module that simulate the B3 Project, when the tickets are registers and controllers by the Brazilian investments
+>**B3Invest Manager**
+>>Module that simulate the B3 Project, when the tickets are registers and controllers by the Brazilian investments
 >
->B3Invest User
->Module responsible from the user registers
+>**B3Invest User**
+>>Module responsible from the user registers
 >
->B3Invest Oauth
->Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
+>**B3Invest Oauth**
+>>Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
 >
 
 - [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run"
@@ -140,7 +140,7 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 
 ## TODO
 
-- :heavy_check_mark: Fix gateway communication with oauth to generate JWT Token
+- :heavy_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~
 - :white_check_mark: B3Invest-Manager
   - :white_check_mark: Swagger
   - :white_check_mark: Hateoas
@@ -155,9 +155,9 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
   - :white_check_mark: Swagger
   - :white_check_mark: Unit Tests
 - :white_check_mark: Docker Projects
-  - :heavy_check_mark: ConfigServer
-  - :heavy_check_mark: GatewayZuul
-  - :heavy_check_mark: EurekaServer
+  - :heavy_check_mark: ~~ConfigServer~~
+  - :heavy_check_mark: ~~GatewayZuul~~
+  - :heavy_check_mark: ~~EurekaServer~~
   - :white_check_mark: Oauth
   - :white_check_mark: User  
   - :white_check_mark: Manager  
