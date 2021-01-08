@@ -56,6 +56,7 @@ Default port: 8765
 ## Architecture Design
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
 
+## Security Authentication Flow
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/authenticationFlow.png)
 
 ---
@@ -118,29 +119,30 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 
 ## TODO
 
-- :heavy_check_mark: Update helper architecture
-
-- :heavy_check_mark: Update README repo file
-
-- :white_check_mark: Fix gateway communication with oauth to generate JWT Token
-
+- :heavy_check_mark: Fix gateway communication with oauth to generate JWT Token
 - :white_check_mark: B3Invest-Manager
   - :white_check_mark: Swagger
   - :white_check_mark: Hateoas
   - :white_check_mark: Pagination
   - :white_check_mark: Redis
-  - :white_check_mark: Swagger
 - :white_check_mark: B3Invest-Broker
   - :white_check_mark: Swagger
   - :white_check_mark: Hateoas
   - :white_check_mark: Pagination
   - :white_check_mark: Redis
-  - :white_check_mark: Swagger
 - :white_check_mark: B3Invest-User
   - :white_check_mark: Swagger
   - :white_check_mark: Unit Tests
 - :white_check_mark: Docker Projects
-
+  - :heavy_check_mark: ConfigServer
+  - :heavy_check_mark: GatewayZuul
+  - :heavy_check_mark: EurekaServer
+  - :white_check_mark: Oauth
+  - :white_check_mark: User  
+  - :white_check_mark: Manager  
+  - :white_check_mark: Broker
+  - :white_check_mark: Redis
+    
 [spring boot]: https://spring.io/projects/spring-boot
 [spring cloud]: https://spring.io/projects/spring-cloud
 [spring security]: https://spring.io/projects/spring-security 
