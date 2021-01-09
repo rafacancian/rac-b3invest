@@ -5,6 +5,8 @@ import com.b3investmanager.exception.GatewayException;
 import com.b3investmanager.external.repository.TicketRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
@@ -60,6 +62,7 @@ public class TicketGatewayImpl implements TicketGateway {
     }
 
     @Override
+    @CachePut(value = "Tickets", key = "#ticket.id")
     public Ticket save(final Ticket ticket) {
         try {
             log.debug("TicketGatewayImpl save ticket");
@@ -71,6 +74,7 @@ public class TicketGatewayImpl implements TicketGateway {
     }
 
     @Override
+    @CacheEvict(value = "Tickets", key = "#ticket.id")
     public void delete(final Ticket ticket) {
         try {
             log.debug("TicketGatewayImpl delete ticket");

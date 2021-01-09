@@ -52,6 +52,7 @@
 - [Lombok]: Annotations helper library
 - [H2]: A very fast database embedded for tests
 - [Redis]: A open source in-memory data structure store used as a database and cache
+- [Swagger]: Swagger open source and pro tools have helped millions of API developers, teams, and organizations deliver great APIs.
 - [Docker]: The most famous container engine used to execute the B3Invest project with their external dependencies
 
 ---
@@ -80,7 +81,9 @@
 ---
 
 ## Redis
+https://redislabs.com/get-started-with-redis/#Option-C
 Docker image available on docker-compose file
+
 ```
  Coomand: docker-compose up -d
 ```
@@ -188,6 +191,7 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 [lombok]: https://github.com/rzwitserloot/lombok
 [h2]: http://h2database.com/html/main.html
 [redis]: https://redis.io/
+[Swagger]: https://swagger.io/
 [eureka]: https://github.com/Netflix/eureka
 [docker]: https://www.docker.com/
 [postman-file]: https://github.com/rafacancian/b3invest/tree/main/helper/postCollection
