@@ -8,9 +8,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.Optional;
 
 @Slf4j
@@ -51,10 +52,10 @@ public class TicketGatewayImpl implements TicketGateway {
 
     @Override
     @Cacheable(cacheNames = "Tickets", key = "(#root.method.name)")
-    public List<Ticket> findAll() {
+    public Page<Ticket> findAll(Pageable pageable) {
         try {
             log.debug("TicketGatewayImpl find all ticket");
-            return repository.findAll();
+            return repository.findAll(pageable);
         } catch (final Exception e) {
             log.error(MSG_ERROR_FIND_ALL);
             throw new GatewayException(MSG_ERROR_FIND_ALL, e);

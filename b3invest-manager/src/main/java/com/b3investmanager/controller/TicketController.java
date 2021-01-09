@@ -1,6 +1,7 @@
 package com.b3investmanager.controller;
 
 import com.b3investmanager.exception.ControllerException;
+import com.b3investmanager.model.ResponseVO;
 import com.b3investmanager.model.TicketVO;
 import com.b3investmanager.service.TicketService;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 
 @Slf4j
@@ -35,9 +34,11 @@ public class TicketController extends ControllerException {
     }
 
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public ResponseEntity<?> findAll() {
-        final List<TicketVO> ticketVOs = ticketService.findAll();
-        return new ResponseEntity<>(ticketVOs, HttpStatus.OK);
+    public ResponseEntity<?> findAll(
+            @RequestParam(value = "page", required = false, defaultValue = "0") final int page,
+            @RequestParam(value = "page-size", required = false, defaultValue = "10") final int size) {
+        final ResponseVO responseVO = ticketService.findAll(page, size);
+        return new ResponseEntity<>(responseVO, HttpStatus.OK);
     }
 
     @PostMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}, consumes = {
