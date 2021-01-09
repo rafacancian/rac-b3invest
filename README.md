@@ -154,31 +154,31 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 
 ## TODO
 
-- :white_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~
-- :white_check_mark: B3Invest-Manager
+- :heavy_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~
+- :ballot_box_with_check: B3Invest-Manager
   - :heavy_check_mark: ~~Swagger~~
   - :heavy_check_mark: ~~Hateoas~~
   - :heavy_check_mark: ~~Pagination~~
   - :heavy_check_mark: ~~Redis~~
   - :ballot_box_with_check: Tests for adapter
   - :ballot_box_with_check: Tests for gatewayImpl
-- :white_check_mark: B3Invest-Broker
-  - :white_check_mark: Swagger
-  - :white_check_mark: Hateoas
-  - :white_check_mark: Pagination
-  - :white_check_mark: Redis
-- :white_check_mark: B3Invest-User
-  - :white_check_mark: Swagger
-  - :white_check_mark: Unit Tests
-  - :white_check_mark: Redis
-- :white_check_mark: Docker Projects
+- :ballot_box_with_check: B3Invest-Broker
+  - :ballot_box_with_check: Swagger
+  - :ballot_box_with_check: Hateoas
+  - :ballot_box_with_check: Pagination
+  - :ballot_box_with_check: Redis
+- :ballot_box_with_check: B3Invest-User
+  - :ballot_box_with_check: Swagger
+  - :ballot_box_with_check: Unit Tests
+  - :ballot_box_with_check: Redis
+- :ballot_box_with_check: Docker Projects
   - :heavy_check_mark: ~~ConfigServer~~
   - :heavy_check_mark: ~~GatewayZuul~~
   - :heavy_check_mark: ~~EurekaServer~~
-  - :white_check_mark: Oauth
-  - :white_check_mark: User  
-  - :white_check_mark: Manager  
-  - :white_check_mark: Broker
+  - :ballot_box_with_check: Oauth
+  - :ballot_box_with_check: User  
+  - :ballot_box_with_check: Manager  
+  - :ballot_box_with_check: Broker
   - :heavy_check_mark: ~~Redis~~
     
 [spring boot]: https://spring.io/projects/spring-boot
