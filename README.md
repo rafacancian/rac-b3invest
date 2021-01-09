@@ -157,8 +157,8 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 - :heavy_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~
 - :white_check_mark: B3Invest-Manager
   - :heavy_check_mark: ~~Swagger~~
-  - :white_check_mark: ~~Hateoas~~
-  - :white_check_mark: ~~Pagination~~
+  - :heavy_check_mark: ~~Hateoas~~
+  - :heavy_check_mark: ~~Pagination~~
   - :heavy_check_mark: ~~Redis~~
   - :white_check_mark: Tests for Adapter
   - :white_check_mark: Tests for gatewayImpl
