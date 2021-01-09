@@ -154,32 +154,32 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 
 ## TODO
 
-:heavy_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~
-:ballot_box_with_check: B3Invest-Manager
-  :heavy_check_mark: ~~Swagger~~
-  :heavy_check_mark: ~~Hateoas~~
-  :heavy_check_mark: ~~Pagination~~
-  :heavy_check_mark: ~~Redis~~
-  :ballot_box_with_check: Tests for adapter
-  :ballot_box_with_check: Tests for gatewayImpl
-:ballot_box_with_check: B3Invest-Broker
-  :ballot_box_with_check: Swagger
-  :ballot_box_with_check: Hateoas
-  :ballot_box_with_check: Pagination
-  :ballot_box_with_check: Redis
-:ballot_box_with_check: B3Invest-User
-  :ballot_box_with_check: Swagger
-  :ballot_box_with_check: Unit Tests
-  :ballot_box_with_check: Redis
-:ballot_box_with_check: Docker Projects
-  :heavy_check_mark: ~~ConfigServer~~
-  :heavy_check_mark: ~~GatewayZuul~~
-  :heavy_check_mark: ~~EurekaServer~~
-  :ballot_box_with_check: Oauth
-  :ballot_box_with_check: User  
-  :ballot_box_with_check: Manager  
-  :ballot_box_with_check: Broker
-  :heavy_check_mark: ~~Redis~~
+- :heavy_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~ 
+- :ballot_box_with_check: B3Invest-Manager 
+-   :heavy_check_mark: ~~Swagger~~ 
+-   :heavy_check_mark: ~~Hateoas~~
+-   :heavy_check_mark: ~~Pagination~~
+-   :heavy_check_mark: ~~Redis~~
+-   :ballot_box_with_check: Tests for adapter
+-   :ballot_box_with_check: Tests for gatewayImpl
+- :ballot_box_with_check: B3Invest-Broker
+-   :ballot_box_with_check: Swagger
+-   :ballot_box_with_check: Hateoas
+-   :ballot_box_with_check: Pagination
+-   :ballot_box_with_check: Redis
+- :ballot_box_with_check: B3Invest-User
+-   :ballot_box_with_check: Swagger
+-   :ballot_box_with_check: Unit Tests
+-   :ballot_box_with_check: Redis
+- :ballot_box_with_check: Docker Projects
+-   :heavy_check_mark: ~~ConfigServer~~
+-   :heavy_check_mark: ~~GatewayZuul~~
+-   :heavy_check_mark: ~~EurekaServer~~
+-   :ballot_box_with_check: Oauth
+-   :ballot_box_with_check: User  
+-   :ballot_box_with_check: Manager  
+-   :ballot_box_with_check: Broker
+-   :heavy_check_mark: ~~Redis~~
     
 [spring boot]: https://spring.io/projects/spring-boot
 [spring cloud]: https://spring.io/projects/spring-cloud
