@@ -156,10 +156,10 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 
 - :heavy_check_mark: ~~Fix gateway communication with oauth to generate JWT Token~~
 - :white_check_mark: B3Invest-Manager
-  - :white_check_mark: Swagger
+  - :heavy_check_mark: ~~Swagger~~
   - :white_check_mark: Hateoas
   - :white_check_mark: Pagination
-  - :white_check_mark: Redis
+  - :heavy_check_mark: ~~Redis~~
 - :white_check_mark: B3Invest-Broker
   - :white_check_mark: Swagger
   - :white_check_mark: Hateoas
@@ -176,7 +176,7 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
   - :white_check_mark: User  
   - :white_check_mark: Manager  
   - :white_check_mark: Broker
-  - :white_check_mark: Redis
+  - :heavy_check_mark: ~~Redis~~
     
 [spring boot]: https://spring.io/projects/spring-boot
 [spring cloud]: https://spring.io/projects/spring-cloud
