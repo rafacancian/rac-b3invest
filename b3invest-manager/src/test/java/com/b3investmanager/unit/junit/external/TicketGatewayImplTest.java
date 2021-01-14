@@ -1,4 +1,4 @@
-package com.b3investmanager.unit.junit;
+package com.b3investmanager.unit.junit.external;
 
 import com.b3investmanager.exception.GatewayException;
 import com.b3investmanager.external.TicketGatewayImpl;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.*;
 
-public class TicketServiceTest {
+public class TicketGatewayImplTest {
 
     @Test
     void shouldFindTicketWithSuccess() {

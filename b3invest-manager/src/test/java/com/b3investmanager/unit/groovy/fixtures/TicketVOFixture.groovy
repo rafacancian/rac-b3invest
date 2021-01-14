@@ -12,4 +12,5 @@ class TicketVOFixture {
                 .description("Itausa")
                 .value(11.36).build();
     }
+
 }

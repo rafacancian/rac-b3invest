@@ -1,4 +1,4 @@
-package com.b3investmanager.unit.groovy
+package com.b3investmanager.unit.groovy.controller
 
 import com.b3investmanager.controller.TicketController
 import com.b3investmanager.model.TicketVO

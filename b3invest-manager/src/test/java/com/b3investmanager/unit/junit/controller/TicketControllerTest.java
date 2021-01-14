@@ -1,4 +1,4 @@
-package com.b3investmanager.unit.junit;
+package com.b3investmanager.unit.junit.controller;
 
 import com.b3investmanager.controller.TicketController;
 import com.b3investmanager.unit.groovy.fixtures.TicketVOFixture;
