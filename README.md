@@ -163,9 +163,9 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
     - :ballot_box_with_check: Tests for adapter
     - :ballot_box_with_check: Tests for gatewayImpl
 - :ballot_box_with_check: B3Invest-Broker
-    - :ballot_box_with_check: Swagger
-    - :ballot_box_with_check: Hateoas
-    - :ballot_box_with_check: Pagination
+    - :heavy_check_mark: ~~Swagger~~
+    - :heavy_check_mark: ~~Hateoas~~
+    - :heavy_check_mark: ~~Pagination~~
     - :ballot_box_with_check: Redis
 - :ballot_box_with_check: B3Invest-User
     - :ballot_box_with_check: Swagger
