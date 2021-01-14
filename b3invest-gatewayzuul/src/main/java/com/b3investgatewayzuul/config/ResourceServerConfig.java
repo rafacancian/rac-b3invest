@@ -27,13 +27,43 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Autowired
     private JwtTokenStore tokenStore;
 
-    private static final String[] PUBLIC = {"/b3invest-oauth/oauth/token", "/b3invest-manager/h2-console/**"};
+    private static final String[] PUBLIC = {"" +
+            "/b3invest-oauth/oauth/token",
+            "/b3invest-manager/h2-console/**"
+    };
 
-    private static final String[] OPERATOR = {"/b3invest-broker/**"};
+    private static final String[] OPERATOR = {
+            "/b3invest-broker/**"
+    };
 
-    private static final String[] ADMIN = {"/b3invest-manager/**", "/b3invest-user/**", "/b3invest-oauth/users/**", "/actuator/**", "/b3invest-manager/actuator/**"};
+    private static final String[] ADMIN = {"" +
+            "/b3invest-manager/**",
+            "/b3invest-user/**",
+            "/b3invest-oauth/users/**",
+            "/actuator/**",
+            "/b3invest-manager/actuator/**"
+    };
 
-    private static final String[] AUTH_WHITELIST = {"/b3invest-manager/swagger-ui/**", "/b3invest-manager/swagger-resources/**", "/b3invest-manager/swagger-ui.html", "/b3invest-manager/v2/api-docs", "/b3invest-manager/webjars/**"};
+    private static final String[] WHITELIST = {
+            "/b3invest-manager/swagger-ui/**",
+            "/b3invest-manager/swagger-resources/**",
+            "/b3invest-manager/swagger-ui.html",
+            "/b3invest-manager/v2/api-docs",
+            "/b3invest-manager/webjars/**",
+
+            "/b3invest-broker/swagger-ui/**",
+            "/b3invest-broker/swagger-resources/**",
+            "/b3invest-broker/swagger-ui.html",
+            "/b3invest-broker/v2/api-docs",
+            "/b3invest-broker/webjars/**",
+
+            "/b3invest-user/swagger-ui/**",
+            "/b3invest-user/swagger-resources/**",
+            "/b3invest-user/swagger-ui.html",
+            "/b3invest-user/v2/api-docs",
+            "/b3invest-user/webjars/**"
+    };
+
 
     @Override
     public void configure(final ResourceServerSecurityConfigurer resources) throws Exception {
@@ -46,7 +76,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
         http.authorizeRequests()
                 .antMatchers(PUBLIC).permitAll()
-                .antMatchers(AUTH_WHITELIST).permitAll()
+                .antMatchers(WHITELIST).permitAll()
                 .antMatchers(HttpMethod.GET, OPERATOR).hasAnyRole("OPERATOR", "ADMIN")
                 .antMatchers(ADMIN).hasRole("ADMIN")
                 .anyRequest().authenticated();
