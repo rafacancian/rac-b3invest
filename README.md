@@ -175,7 +175,7 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
     - :heavy_check_mark: ~~EurekaServer~~
     - :heavy_check_mark: ~~Oauth~~
     - :ballot_box_with_check: User  
-    - :ballot_box_with_check: Manager  
+    - :heavy_check_mark: ~~Manager~~  
     - :ballot_box_with_check: Broker
     - :heavy_check_mark: ~~Redis~~
     
