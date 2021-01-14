@@ -1,4 +1,4 @@
-package com.b3investmanager.model;
+package com.b3investbroker.model;
 
 import lombok.*;
 import lombok.experimental.FieldNameConstants;
@@ -17,5 +17,5 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = false)
 public class ResponseVO extends RepresentationModel<ResponseVO> implements Serializable {
     private List<TicketVO> tickets;
-    private LinksVO linksVo;
+    private LinksVO linksVO;
 }

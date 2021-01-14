@@ -2,6 +2,7 @@ package com.b3investbroker.controller;
 
 
 import com.b3investbroker.exception.ControllerException;
+import com.b3investbroker.model.ResponseVO;
 import com.b3investbroker.model.TicketVO;
 import com.b3investbroker.service.TicketService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -10,12 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.*;
 
 
 @Slf4j
@@ -36,16 +32,18 @@ public class TicketController extends ControllerException {
 
     @HystrixCommand(fallbackMethod = "findAllFallBack")
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public ResponseEntity<?> findAll() {
-        final List<TicketVO> ticketVOs = ticketService.findAll();
-        return new ResponseEntity<>(ticketVOs, HttpStatus.OK);
+    public ResponseEntity<?> findAll(
+            @RequestParam(value = "page", required = false, defaultValue = "0") final int page,
+            @RequestParam(value = "page-size", required = false, defaultValue = "10") final int size) {
+        final ResponseVO responseVO = ticketService.findAll(page, size);
+        return new ResponseEntity<>(responseVO, HttpStatus.OK);
     }
 
     public static ResponseEntity<?> findByNameFallBack(final String name) {
         return new ResponseEntity<>(null, HttpStatus.REQUEST_TIMEOUT);
     }
 
-    public static ResponseEntity<?> findAllFallBack() {
+    public static ResponseEntity<?> findAllFallBack(final int page, final int size) {
         return new ResponseEntity<>(null, HttpStatus.REQUEST_TIMEOUT);
     }
 

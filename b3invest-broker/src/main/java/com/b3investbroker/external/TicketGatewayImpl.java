@@ -1,20 +1,17 @@
 package com.b3investbroker.external;
 
+import com.b3investbroker.adapter.ResponseVOAdapter;
 import com.b3investbroker.exception.GatewayException;
+import com.b3investbroker.model.ResponseVO;
 import com.b3investbroker.model.TicketVO;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Slf4j
 @Component
-//@RequiredArgsConstructor
 @AllArgsConstructor
 public class TicketGatewayImpl implements TicketGateway {
 
@@ -37,16 +34,14 @@ public class TicketGatewayImpl implements TicketGateway {
     }
 
     @Override
-    public List<TicketVO> findAll() {
+    public ResponseVO findAll(int page, int size) {
         try {
             log.debug("TicketGatewayImpl find all ticket");
-            final ResponseEntity<?> response = ticketFeignClient.findAll();
-            return (List<TicketVO>) response.getBody();
+            final ResponseEntity<?> response = ticketFeignClient.findAll(page, size);
+            return ResponseVOAdapter.create(response);
         } catch (final Exception e) {
             log.error(MSG_ERROR_FIND_ALL);
             throw new GatewayException(MSG_ERROR_FIND_ALL, e);
         }
     }
-
-
 }

@@ -1,12 +1,11 @@
 package com.b3investbroker.external;
 
+import com.b3investbroker.model.ResponseVO;
 import com.b3investbroker.model.TicketVO;
-
-import java.util.List;
 
 public interface TicketGateway {
 
     TicketVO findByName(String name);
 
-    List<TicketVO> findAll();
+    ResponseVO findAll(int page, int size);
 }

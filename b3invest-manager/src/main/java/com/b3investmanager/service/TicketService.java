@@ -1,11 +1,13 @@
 package com.b3investmanager.service;
 
+import com.b3investmanager.adapter.LinksVOAdapter;
 import com.b3investmanager.adapter.ResponseVOAdapter;
 import com.b3investmanager.adapter.TicketAdapter;
 import com.b3investmanager.adapter.TicketVOAdapter;
 import com.b3investmanager.entity.Ticket;
 import com.b3investmanager.exception.EntityNotFoundException;
 import com.b3investmanager.external.TicketGateway;
+import com.b3investmanager.model.LinksVO;
 import com.b3investmanager.model.ResponseVO;
 import com.b3investmanager.model.TicketVO;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +16,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PagedResourcesAssembler;
-import org.springframework.hateoas.Links;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -48,9 +50,10 @@ public class TicketService {
     public ResponseVO findAll(int page, int size) {
         final Pageable pageable = PageRequest.of(page, size);
         final Page<Ticket> pageTickets = gateway.findAll(pageable);
-        final Links links = pagedResourcesAssembler.toModel(pageTickets).getLinks();
-        List<TicketVO> ticketVOs = TicketVOAdapter.create(pageTickets.getContent());
-        return ResponseVOAdapter.create(ticketVOs, links);
+        final PagedModel pagedModel = pagedResourcesAssembler.toModel(pageTickets);
+        final LinksVO linksVO = LinksVOAdapter.create(pagedModel);
+        final List<TicketVO> ticketVOs = TicketVOAdapter.create(pageTickets.getContent());
+        return ResponseVOAdapter.create(ticketVOs, linksVO);
     }
 
     public TicketVO create(final TicketVO ticketVO) {
