@@ -167,14 +167,13 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
     - :heavy_check_mark: ~~Hateoas~~
     - :heavy_check_mark: ~~Pagination~~
 - :ballot_box_with_check: B3Invest-User
-    - :ballot_box_with_check: Swagger
+    - :heavy_check_mark: ~~Swagger~~
     - :ballot_box_with_check: Unit Tests
-    - :ballot_box_with_check: Redis
 - :ballot_box_with_check: Docker Projects
     - :heavy_check_mark: ~~ConfigServer~~
     - :heavy_check_mark: ~~GatewayZuul~~
     - :heavy_check_mark: ~~EurekaServer~~
-    - :ballot_box_with_check: Oauth
+    - :heavy_check_mark: ~~Oauth~~
     - :ballot_box_with_check: User  
     - :ballot_box_with_check: Manager  
     - :ballot_box_with_check: Broker
