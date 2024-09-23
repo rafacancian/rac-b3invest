@@ -5,41 +5,41 @@
 </p>
 
 **DEPRECATED: a new project was created (Private repository) </br></br>
-Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
+Project developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
 
 <h2> B3Invest Config Server</h2>
-Module responsible to centralize the configuration access (this configurations are public because the project is used just to study)  
+Module responsible for centralizing the configuration access (these configurations are public because the project is used just to study)  
 </br></br>
 
 <h2> B3Invest Eureka Server </h2>
-Module responsible to cloud server and service discover
+The module responsible for the cloud server and service discover
 ```
   Default Port: 8761
 ``` 
-</br>
+</br></br>
 
 <h2> B3Invest Gateway Zuul </h2>
-Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
+The module is responsible for managing the request using intelligent routing. When a requisition from the client Gateway Zuul will send it to the correct microservice
  ```
   Default port: 8765
  ```
-</br>
+</br></br>
 
 <h2> B3Invest Broker </h2>
-Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
-</br>
+The module represents the investment broker when the client has access and can view the B3 tickets and the respective values
+</br></br>
 
 <h2> B3Invest Manager </h2>
-Module that simulate the B3 Project, when the tickets are registers and controllers by the Brazilian investments
-</br>
+The module that simulates the B3 Project, when the tickets are registered and controllers by the Brazilian investments
+</br></br>
 
 <h2> B3Invest User </h2>
-Module responsible from the user registers
-</br>
+The module responsible for the user registers
+</br></br>
 
 <h2> B3Invest Oauth </h2>
-Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
-</br>
+Security module responsible for controlling the access from all the systems according to authentication and authorizations users' rulers
+</br></br>
 
 ---
 
@@ -55,7 +55,7 @@ Security module responsible to control the access from all the systems according
 - [Spring Security]: providing authentication and authorization security
   - [oauth2]: oauth2 authentication bearer JWT token system 
 - [JUnit]: Unit Test
-- [Spock]: A wonderful Groovy framework for Behaviour Driven Development-BDD test
+- [Spock]: A wonderful Groovy framework for behavior-driven Development-BDD test
 - [Lombok]: Annotations helper library
 - [H2]: A very fast database embedded for tests
 - [Redis]: A open source in-memory data structure store used as a database and cache
