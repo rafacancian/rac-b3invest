@@ -46,6 +46,7 @@ The security module is responsible for controlling access from all the systems a
 
 
 <br>
+
 ## System Technologies
 
 - [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring Applications that you can "just run"
@@ -88,7 +89,7 @@ The security module is responsible for controlling access from all the systems a
 ## Postman Collection
 - [Postman collection][postman-file]
 
----
+<br>
 
 ## Redis
 https://redislabs.com/get-started-with-redis/#Option-C
@@ -137,7 +138,7 @@ docker logs -f <container-id>
 docker run -p <external-port>:<internal-port> --name <container-name> --network <network-name> <image-name:tag>
 ```
 
----
+<br>
 
 ## CORS Configuration Test
 
@@ -160,7 +161,7 @@ fetch("http://localhost:8765/b3invest-broker/ticket", {
 });
 ```
 
----
+<br>
 
 ## TODO
 
