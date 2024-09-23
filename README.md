@@ -6,7 +6,7 @@
 <br>
 
 ### DEPRECATED: a new project was created (Private repository)
-The project was developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment Exchange).
+### The project was developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment Exchange).
 <br><br>
 
 
