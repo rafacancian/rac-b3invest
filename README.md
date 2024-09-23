@@ -4,41 +4,51 @@
   </a>
 </p>
 
+<br>
+
 ### DEPRECATED: a new project was created (Private repository)
 The project was developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment Exchange).
+
+<be>
 
 ---
 
 #### B3Invest Config Server
 The module is responsible for centralizing the configuration access (these configurations are public because the project is used just to study). 
 
+<br>
+
 #### B3Invest Eureka Server
 The module is responsible for the cloud server and service discovery.
 ```
   Default Port: 8761
 ``` 
-  
+
+<br>
+ 
 #### B3Invest Gateway Zuul
 The module is responsible for managing the request using intelligent routing when a requisition from the client Gateway Zuul is send it to the correct microservice.
  ```
   Default port: 8765
  ```
 
-
-  
+<br>
+ 
 #### B3Invest Broker
 The module represents the investment broker when the client has access and can view the B3 tickets and the respective values.
 
-
+<br>
   
 #### B3Invest Manager
 The module that simulates the B3 Project, when the tickets are registered and controllers by the Brazilian investments.
 
-
+<br>
   
 #### B3Invest User
 The module is responsible for the user registers.
-  
+
+<be>
+
 #### B3Invest Oauth
 The security module is responsible for controlling access from all the systems according to authentication and authorization of the user's rulers.
   
