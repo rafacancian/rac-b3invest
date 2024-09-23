@@ -46,7 +46,6 @@ The security module is responsible for controlling access from all the systems a
 
 
 <br>
-
 ## System Technologies
 
 - [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring Applications that you can "just run"
@@ -66,17 +65,17 @@ The security module is responsible for controlling access from all the systems a
 - [Swagger]: Swagger open source and pro tools have helped millions of API developers, teams, and organizations deliver great APIs.
 - [Docker]: The most famous container engine used to execute the B3Invest project with their external dependencies
 
----
+<br>
 
 ## Architecture Design
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/architecture.png)
 
----
+<br>
 
 ## Security Authentication Flow
 ![](https://raw.githubusercontent.com/rafacancian/b3invest/main/helper/architecture/authenticationFlow.png)
 
----
+<br>
 
 ## Steps to run
 1. Run Config Server
@@ -84,7 +83,7 @@ The security module is responsible for controlling access from all the systems a
 3. Run gateway Zuul
 4. Run other projects
 
----
+<br>
 
 ## Postman Collection
 - [Postman collection][postman-file]
