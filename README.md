@@ -4,48 +4,43 @@
   </a>
 </p>
 
-## DEPRECATED: a new project was created (Private repository) </br></br>
-Project developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)
+### DEPRECATED: a new project was created (Private repository)
+The project was developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment Exchange).
 
-### B3Invest Config Server
-Module responsible for centralizing the configuration access (these configurations are public because the project is used just to study)  
+---
 
+#### B3Invest Config Server
+The module is responsible for centralizing the configuration access (these configurations are public because the project is used just to study). 
 
-### B3Invest Eureka Server
-The module responsible for the cloud server and service discover
+#### B3Invest Eureka Server
+The module is responsible for the cloud server and service discovery.
 ```
   Default Port: 8761
 ``` 
-
-
-### B3Invest Gateway Zuul
-The module is responsible for managing the request using intelligent routing. When a requisition from the client Gateway Zuul will send it to the correct microservice
+  
+#### B3Invest Gateway Zuul
+The module is responsible for managing the request using intelligent routing when a requisition from the client Gateway Zuul is send it to the correct microservice.
  ```
   Default port: 8765
  ```
-
-
-### B3Invest Broker
-The module represents the investment broker when the client has access and can view the B3 tickets and the respective values
-
-
-### B3Invest Manager
-The module that simulates the B3 Project, when the tickets are registered and controllers by the Brazilian investments
-
-
-### B3Invest User
-The module responsible for the user registers
-
-
-### B3Invest Oauth
-Security module responsible for controlling the access from all the systems according to authentication and authorizations users' rulers
-
-
+  
+#### B3Invest Broker
+The module represents the investment broker when the client has access and can view the B3 tickets and the respective values.
+  
+#### B3Invest Manager
+The module that simulates the B3 Project, when the tickets are registered and controllers by the Brazilian investments.
+  
+#### B3Invest User
+The module is responsible for the user registers.
+  
+#### B3Invest Oauth
+The security module is responsible for controlling access from all the systems according to authentication and authorization of the user's rulers.
+  
 ---
 
 ## System Technologies
 
-- [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run"
+- [Spring Boot]: Spring Boot makes it easy to create stand-alone, production-grade Spring Applications that you can "just run"
 - [Spring Cloud]: providing both authentication and authorization 
   - [Feign]: for external server communications
   - [Netflix Zuul]:  Intelligent Routing
@@ -57,7 +52,7 @@ Security module responsible for controlling the access from all the systems acco
 - [JUnit]: Unit Test
 - [Spock]: A wonderful Groovy framework for behavior-driven Development-BDD test
 - [Lombok]: Annotations helper library
-- [H2]: A very fast database embedded for tests
+- [H2]: A fast database embedded for tests
 - [Redis]: A open source in-memory data structure store used as a database and cache
 - [Swagger]: Swagger open source and pro tools have helped millions of API developers, teams, and organizations deliver great APIs.
 - [Docker]: The most famous container engine used to execute the B3Invest project with their external dependencies
@@ -78,7 +73,7 @@ Security module responsible for controlling the access from all the systems acco
 1. Run Config Server
 2. Run Eureka Server
 3. Run gateway Zuul
-4. Run others projects
+4. Run other projects
 
 ---
 
@@ -96,7 +91,7 @@ Docker image available on docker-compose file
 ```
 
 ## Swagger
-- The generated swagger html page is available in the following address
+- The generated swagger HTML page is available at the following address
 ```
     http://localhost:8080/swagger-ui/index.html
 ```
