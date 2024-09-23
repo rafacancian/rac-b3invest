@@ -10,7 +10,6 @@ The project was developed to apply concepts and experiences using a microservice
 <br><br>
 
 ---
-<br>
 
 #### B3Invest Config Server
 The module is responsible for centralizing the configuration access (these configurations are public because the project is used just to study). 
@@ -47,7 +46,7 @@ The security module is responsible for controlling access from all the systems a
 <br>
 
 ---
-<be>
+<br>
 
 ## System Technologies
 
