@@ -23,12 +23,18 @@ The module is responsible for managing the request using intelligent routing whe
  ```
   Default port: 8765
  ```
+
+
   
 #### B3Invest Broker
 The module represents the investment broker when the client has access and can view the B3 tickets and the respective values.
+
+
   
 #### B3Invest Manager
 The module that simulates the B3 Project, when the tickets are registered and controllers by the Brazilian investments.
+
+
   
 #### B3Invest User
 The module is responsible for the user registers.
