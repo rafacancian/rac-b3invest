@@ -9,7 +9,6 @@
 The project was developed to apply concepts and experiences using a microservice architecture based on simplified investment business rules of B3 (Brazilian Investment Exchange).
 <br><br>
 
----
 
 #### B3Invest Config Server
 The module is responsible for centralizing the configuration access (these configurations are public because the project is used just to study). 
@@ -45,7 +44,7 @@ The module is responsible for the user registers.
 The security module is responsible for controlling access from all the systems according to authentication and authorization of the user's rulers.
 <br>
 
----
+
 <br>
 
 ## System Technologies
