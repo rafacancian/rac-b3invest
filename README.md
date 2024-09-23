@@ -20,14 +20,14 @@ The module is responsible for the cloud server and service discovery.
 ```
   Default Port: 8761
 ``` 
-<br><br>
+<br>
 
 #### B3Invest Gateway Zuul
 The module is responsible for managing the request using intelligent routing when a requisition from the client Gateway Zuul is send it to the correct microservice.
  ```
   Default port: 8765
  ```
-<br><br>
+<br>
  
 #### B3Invest Broker
 The module represents the investment broker when the client has access and can view the B3 tickets and the respective values.
