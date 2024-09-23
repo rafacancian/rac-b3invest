@@ -4,36 +4,44 @@
   </a>
 </p>
 
-**DEPRECATED: a new project was created (Private repository) </br>
+**DEPRECATED: a new project was created (Private repository) </br></br>
 Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
-> 
->**B3Invest Config Server** 
->>Module responsible to centralize the configuration access (this configurations are public because the project is used just to study)  
->
->**B3Invest Eureka Server** 
->>Module responsible to cloud server and service discover
->>```
->>  Default Port: 8761
->>  ``` 
->
->**B3Invest Gateway Zuul**
->>Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
->> ```
->>  Default port: 8765
->>  ```
-> 
->**B3Invest Broker**
->>Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
->
->**B3Invest Manager**
->>Module that simulate the B3 Project, when the tickets are registers and controllers by the Brazilian investments
->
->**B3Invest User**
->>Module responsible from the user registers
->
->**B3Invest Oauth**
->>Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
->
+
+</br></br>
+
+<h2> B3Invest Config Server</h2>
+Module responsible to centralize the configuration access (this configurations are public because the project is used just to study)  
+</br>
+
+<h2> B3Invest Eureka Server </h2>
+Module responsible to cloud server and service discover
+```
+  Default Port: 8761
+``` 
+</br>
+
+<h2> B3Invest Gateway Zuul </h2>
+Module responsible to manager the request using intelligent routing. When arrive a requisition from the client the gateway zuul will send to correct microservice
+ ```
+  Default port: 8765
+ ```
+</br>
+
+<h2> B3Invest Broker </h2>
+Module represents the investment broker when the client has access and can view the B3 tickets and the respective values
+</br>
+
+<h2> B3Invest Manager </h2>
+Module that simulate the B3 Project, when the tickets are registers and controllers by the Brazilian investments
+</br>
+
+<h2> B3Invest User </h2>
+Module responsible from the user registers
+</br>
+
+<h2> B3Invest Oauth </h2>
+Security module responsible to control the access from all the systems according to authentication and authorizations users rulers
+</br>
 
 ---
 
