@@ -7,7 +7,7 @@
 **DEPRECATED: a new project was created (Private repository) </br></br>
 Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
 
-</br></br>
+</br>
 
 <h2> B3Invest Config Server</h2>
 Module responsible to centralize the configuration access (this configurations are public because the project is used just to study)  
