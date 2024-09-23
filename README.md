@@ -4,7 +4,7 @@
   </a>
 </p>
 
-**DEPRECATED: a new project was created (Private repository) \n\n
+**DEPRECATED: a new project was created (Private repository) </br>
 Project developed for apply concepts and experiences using microservice architecture based on simplified investment business rules of B3 (Brazilian Investment exchange)**
 > 
 >**B3Invest Config Server** 
